@@ -1,9 +1,12 @@
 package com.example.praktikumsatu;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.view.Gravity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.os.Bundle;
 import android.widget.Button;
@@ -22,6 +25,22 @@ public class MainActivity extends AppCompatActivity {
     String nama, password;
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menuoption, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId()== R.id.mnDaftar){
+            Intent i = new Intent(getApplicationContext(), DaftarActivity.class);
+            startActivity(i);
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -46,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 password = edpassword.getText().toString();
 
 
-                if(nama.equals("atafatta@gmail.com")&& password.equals("umy123")){
+                if(nama.equals("atafatta")&& password.equals("umy123")){
                     {
                         Bundle b = new Bundle();
                         //key parsind data dimasukkan kedalam bundle
@@ -76,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "EMAIL SALAH!", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    Toast.makeText(getApplicationContext(), "EMAIL DAN PASSWORED SALAH!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "EMAIL DAN PASSWORD SALAH!", Toast.LENGTH_SHORT).show();
                 }
             }
         });
