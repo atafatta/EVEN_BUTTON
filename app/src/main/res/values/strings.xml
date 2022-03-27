@@ -1,13 +1,13 @@
 <resources>
-    <string name="app_name">Sample Constraint Layout</string>
+    <string name="app_name">ToDo App</string>
     <string name="tEmail">Email</string>
     <string name="tPassword">Password</string>
     <string name="bsignin">Sign-In</string>
     <string name="mDaftar">Pendaftaran</string>
-    <string name="Idaftar">Daftar</string>
+    <string name="Idaftar">Register</string>
     <string name="enama">Masukkan Nama</string>
     <string name="eemail">Masukkan Email</string>
     <string name="epass">Masukkan Password</string>
     <string name="erepass">Masukkan Password</string>
-    <string name="ealamat">Masukkan Alamat</string>
+    <string name="BtnRegist">Registrasi</string>
 </resources>

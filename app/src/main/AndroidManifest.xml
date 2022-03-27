@@ -10,14 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PRAKTIKUMSATU">
         <activity
-            android:name=".DaftarActivity"
+            android:name=".WelcomeTask"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
             android:exported="false" />
         <activity
             android:name=".MainActivity2"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="ToDo App">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
