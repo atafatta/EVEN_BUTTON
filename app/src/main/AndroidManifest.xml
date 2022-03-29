@@ -10,6 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PRAKTIKUMSATU">
         <activity
+            android:name=".activity_popup2"
+            android:parentActivityName=".activity_popup"
+            android:exported="false" />
+        <activity
+            android:name=".activity_popup"
+            android:parentActivityName=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".WelcomeTask"
             android:exported="false" />
         <activity

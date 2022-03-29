@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -84,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                         b.putString("b", password.trim());
 
                         //membuat objek unuk pindah halaman
-                        Intent i = new Intent(getApplicationContext(), WelcomeTask.class);
+                        Intent i = new Intent(getApplicationContext(), activity_popup.class);
                         //memasukkan bundle kedalam intent
                         i.putExtras(b);
                         //berpindah ke halaman lain
